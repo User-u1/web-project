@@ -12,7 +12,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f4f4f9;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
   padding: 0 2rem;
@@ -20,7 +20,7 @@ body {
 
 header {
   background-color: #201185;
-  color: #fff;
+  color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,6 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  letter-spacing: 2px;
   margin: 0;
 }
 
@@ -44,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -58,10 +57,7 @@ nav ul li a:hover {
 }
 
 main {
-  background-color: #f4f4f9;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 8000px;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -73,20 +69,48 @@ main h2 {
 
 main p {
   font-size: 1.2rem;
-  color: #666;
-  margin: 0 auto;
-  width: 80%;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
-.image-container {
-  width: 100%;
-  max-width: 350px;
+main img {
+  width: 300px;
   height: auto;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.1);
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+main ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+main ul li a {
+  color: #0044cc;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+main ul li a:hover {
+  color: #201185;
 }
 
 footer {
   background-color: #201185;
-  color: #fff;
+  color: white;
   padding: 1rem;
   text-align: center;
   margin-top: 3rem;
@@ -113,17 +137,23 @@ a:hover {
     font-size: 2rem;
   }
 
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   nav ul li {
-    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main img {
+    width: 100%;
     margin: 1rem 0;
   }
 
-  main h2 {
-    font-size: 1.6rem;
-  }
-
-  main p {
-    width: 90%;
+  main ul li {
+    display: block;
+    margin: 0.5rem 0;
   }
 }
 
@@ -135,6 +165,10 @@ a:hover {
   nav ul li a {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+
+  main h2 {
+    font-size: 1.6rem;
   }
 
   footer p {

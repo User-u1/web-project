@@ -76,12 +76,7 @@ main p {
   color: #666;
   margin: 0 auto;
   width: 80%;
-}
-
-.image-container {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
+  text-align: left;
 }
 
 footer {

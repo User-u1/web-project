@@ -58,10 +58,7 @@ nav ul li a:hover {
 }
 
 main {
-  background-color: #f4f4f9;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 8000px;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -76,12 +73,57 @@ main p {
   color: #666;
   margin: 0 auto;
   width: 80%;
+  text-align: center;
 }
 
-.image-container {
+section {
+  margin-top: 3rem;
+}
+
+.tables-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-self: center;
+}
+
+table {
   width: 100%;
-  max-width: 350px;
+  border-collapse: collapse;
+  text-align: left;
+  align-content: center;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  vertical-align: middle;
+}
+
+table th {
+  background-color: #201185;
+  color: white;
+}
+
+table img {
+  width: 50px;
   height: auto;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 footer {

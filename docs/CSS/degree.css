@@ -58,10 +58,7 @@ nav ul li a:hover {
 }
 
 main {
-  background-color: #f4f4f9;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 8000px;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -78,10 +75,40 @@ main p {
   width: 80%;
 }
 
-.image-container {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
+table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #0044cc;
+  color: white;
+}
+
+table td {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(even) td {
+  background-color: #f4f4f4;
+}
+
+table a {
+  color: #0044cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+table a:hover {
+  color: #003366;
 }
 
 footer {

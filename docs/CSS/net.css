@@ -58,30 +58,32 @@ nav ul li a:hover {
 }
 
 main {
-  background-color: #f4f4f9;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 8000px;
+  margin-top: 3rem;
   text-align: center;
 }
 
-main h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
+main ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-main p {
-  font-size: 1.2rem;
-  color: #666;
-  margin: 0 auto;
-  width: 80%;
+main ul li {
+  margin: 1rem 0;
 }
 
-.image-container {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
+main ul li a {
+  color: #0044cc;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+main ul li a:hover {
+  background-color: #003366;
+  color: #fff;
+  border-radius: 5px;
 }
 
 footer {
@@ -118,12 +120,8 @@ a:hover {
     margin: 1rem 0;
   }
 
-  main h2 {
-    font-size: 1.6rem;
-  }
-
-  main p {
-    width: 90%;
+  main ul li {
+    font-size: 1.1rem;
   }
 }
 
